@@ -1,34 +1,59 @@
 # Voice guide: how I talk upstream
 
-<!--
-THIS IS A CARRY-OVER SLOT, not a new hole. You wrote this guide in
-week 2; paste your filled week-2 voice-guide.md here, whole. It is not
-re-authored and it is not graded as new work this week.
-
-Then reread it with the plan comment in mind. Your claim and repro
-comments promised and reported; a plan comment commits you to an
-approach in front of the people who maintain the code. If your rules
-do not cover that register (for example: how you state an approach you
-are not certain of, or how you respond when a maintainer already
-suggested a direction), extend the guide with what it needs. Extending
-is allowed and encouraged; starting over is not required.
-
-Live mode reads this file before your plan comment goes out and
-reports any rule your draft breaks. Eval mode ignores it entirely,
-because your voice is yours and carries no gold labels.
--->
-
 ## Who I am in threads
 
-<!-- Paste your week-2 section here. -->
+I'm a first-time contributor to this repo, working through a course exercise, not a maintainer
+or a longtime user of the project. I say what I actually checked and what I actually plan to
+do next, in plain terms — no borrowed authority, no pretending familiarity with the codebase
+I don't have yet. Readers should expect a modest, concrete comment: what I found, what I'm
+about to do, nothing more promised than that.
 
 ## Rules I write by
 
-<!-- Paste your week-2 rules here, wrong/right pairs and all. Add any
-rule the plan-comment register needs that your week-2 comments did
-not. -->
+### Rule: promise the investigation, not the fix
+
+I claim an issue by saying what I'll look into and report back on, never by promising a fix
+or a date. I don't have codebase context yet to know how hard the real fix is.
+
+- Wrong: "I'll have a PR up fixing this by tomorrow."
+- Right: "I'd like to take this — I'll reproduce it and post what I find before opening a PR."
+
+### Rule: say only what the artifact shows
+
+If my output doesn't clearly show the reported behavior, I say that plainly instead of
+rounding up to "reproduced." An honest "didn't trigger it, here's what I saw instead" is a
+real result, not a failure to report.
+
+- Wrong: "Confirmed, this is definitely the same bug."
+- Right: "I ran the steps and got X, not the Y in the issue — possibly a version difference, still checking."
+
+### Rule: no boilerplate stand-ins for content
+
+I don't post a comment that could be pasted onto any issue unchanged. Every comment names
+this issue's specifics — the file, the input, the behavior — even when it's short.
+
+- Wrong: "+1, can confirm, please fix."
+- Right: "Reproduced the parenthesized-number case in pii_scrubber.py; the digits after the closing paren aren't matched."
+
+### Rule: disclose AI assistance when the repo asks for it
+
+If a repo's stated policy asks contributors to disclose AI assistance, I say so directly in
+the comment, without burying it or hedging around it.
+
+- Wrong: (saying nothing, or "put together with some help")
+- Right: "This comment and the repro report below were drafted with AI assistance, reviewed and run by me."
+
+### Rule: own comment stands even on a shared issue
+
+If a classmate already commented on this issue, I still post my own claim and my own repro in
+my own words. I never write "same as above" or lean on someone else's proof.
+
+- Wrong: "Can confirm what @classmate found above."
+- Right: "Reproduced independently: [my own steps and output]."
 
 ## Things I never post
 
-<!-- Paste your week-2 list here; extend it if planning tempts you
-toward new ones (overpromised timelines are the classic). -->
+- A guaranteed fix date or timeline before I've read the code.
+- "+1", "same here", "can confirm" with no artifact of my own attached.
+- A confident "reproduced" when my own output doesn't actually show the reported behavior.
+- Silence about AI assistance on a repo that asks contributors to disclose it.
